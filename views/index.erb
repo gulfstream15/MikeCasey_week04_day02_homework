@@ -1,0 +1,11 @@
+<p>All the pizzas</p>
+
+<% @pizzas.each() do |pizza| %>
+          <!-- Walter White -->
+<p>Name: <%= pizza.pretty_name() %></p>
+<p>Order: <%= pizza.quantity() %> x <%= pizza.topping() %></p>
+          <!-- 1 -->
+<p><a href="/pizzas/<%= pizza.id %>" >Show Order</a></p>
+<hr/>
+
+<% end %>
